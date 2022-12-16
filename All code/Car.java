@@ -1,5 +1,15 @@
 class Car {
     private String id,name,color;
+    public String getId() {
+        return id;
+    }
+
+
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     private int velocity,distance;
     public Car(String id, String name, String color, int velocity) {
         this.id = id;
@@ -8,13 +18,7 @@ class Car {
         this.velocity = velocity;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    
 
     public String getName() {
         return name;
