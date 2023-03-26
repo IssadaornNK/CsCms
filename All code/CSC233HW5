@@ -1,0 +1,8 @@
+import re
+num = input("Enter a scientific notationnumber:")
+if re.fullmatch("\d+(\.\d+)?(E((\+|\-)?)\d+)",num):
+    a = float(num)
+    print("Valid syntax: "+num)
+    print("Value: {}".format(a))
+else:
+    print("Invalid")
